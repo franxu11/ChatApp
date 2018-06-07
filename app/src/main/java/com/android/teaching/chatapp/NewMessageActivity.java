@@ -43,7 +43,5 @@ public class NewMessageActivity extends AppCompatActivity {
 
     }
 
-    public void onClick(View view) {
 
-    }
 }

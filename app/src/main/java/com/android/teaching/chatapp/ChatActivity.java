@@ -29,6 +29,7 @@ public class ChatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chat);
 
 
+
         //Detectar si tenemos conectividad.
         ConnectivityManager myConnectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo myNetworkInfo = myConnectivityManager.getActiveNetworkInfo();
@@ -40,7 +41,7 @@ public class ChatActivity extends AppCompatActivity {
         FirebaseDatabase database =FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("messages").child("text").child("username"); //Esto ultimo lo he añadido pero nada. D:
 
-        myRef.setValue("Hola fiera");
+        myRef.setValue("otraprueba");
 
 
        /* FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -67,6 +68,8 @@ public class ChatActivity extends AppCompatActivity {
         myInflater.inflate(R.menu.menu_activity_chat, menu);
         return true;
     }
+
+    //Me aparece en el preview pero no en la activity. 
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

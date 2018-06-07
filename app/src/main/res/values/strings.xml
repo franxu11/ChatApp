@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ChatApp</string>
+
+    <!--new message strings-->
+    <string name="username">Username</string>
+    <string name="message">Message here!</string>
 </resources>
